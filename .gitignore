@@ -1,0 +1,12 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+*.apk
+*.aab
+*.ipa
+*.har
+*.saz
+*.pcap
+reports/private/
+artifacts/

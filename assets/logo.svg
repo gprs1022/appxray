@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="100%" stop-color="#05192d"/>
+    </linearGradient>
+    <linearGradient id="beamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#4facfe" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="cyanAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="#00f2fe" stroke-opacity="0.2" stroke-width="2"/>
+
+  <!-- Grid lines for Blueprint aesthetic -->
+  <path d="M96 160h320M96 256h320M96 352h320M160 96v320M256 96v320M352 96v320" stroke="#00f2fe" stroke-opacity="0.08" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <!-- Device Outline -->
+  <rect x="136" y="80" width="240" height="352" rx="36" fill="#081426" stroke="url(#cyanAccent)" stroke-width="6"/>
+  <line x1="220" y1="104" x2="292" y2="104" stroke="#4facfe" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="256" cy="404" r="8" fill="#4facfe" fill-opacity="0.5"/>
+
+  <!-- X-Ray Scanner Cone & Glow -->
+  <polygon points="150,140 362,140 330,360 182,360" fill="url(#beamGrad)"/>
+
+  <!-- Scanning Laser Beam -->
+  <line x1="140" y1="250" x2="372" y2="250" stroke="#00f2fe" stroke-width="5" filter="url(#glow)"/>
+  <line x1="140" y1="250" x2="372" y2="250" stroke="#ffffff" stroke-width="2"/>
+
+  <!-- Circuit / Code Nodes inside the scan -->
+  <circle cx="200" cy="200" r="6" fill="#00f2fe" filter="url(#glow)"/>
+  <circle cx="312" cy="200" r="6" fill="#00f2fe" filter="url(#glow)"/>
+  <circle cx="256" cy="300" r="6" fill="#00f2fe" filter="url(#glow)"/>
+  <path d="M200 200 L256 250 L312 200 M256 250 L256 300" fill="none" stroke="#00f2fe" stroke-opacity="0.6" stroke-width="2.5" stroke-dasharray="3 3"/>
+
+  <!-- X-Ray Cross Aperture -->
+  <path d="M190 190 L322 310 M322 190 L190 310" stroke="#ffffff" stroke-opacity="0.4" stroke-width="4" stroke-linecap="round"/>
+</svg>

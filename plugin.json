@@ -1,0 +1,21 @@
+{
+  "name": "appxray",
+  "displayName": "AppXRay",
+  "version": "0.1.0",
+  "description": "Evidence-first reverse engineering & app intelligence plugin for Android, iOS, and Web. Inspect workflows, extract business logic, compare apps, and generate practical product blueprints.",
+  "logo": "assets/logo.svg",
+  "author": {
+    "name": "gprs1022",
+    "url": "https://github.com/gprs1022"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gprs1022/appxray.git"
+  },
+  "homepage": "https://github.com/gprs1022/appxray",
+  "suggestedPrompts": [
+    "/appxray-discover to list third-party apps and APK paths on my connected Android device",
+    "/appxray to run an evidence-based product and business logic analysis on an app",
+    "/appxray-compare to compare multiple apps and generate an MVP product blueprint"
+  ]
+}
