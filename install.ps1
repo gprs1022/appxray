@@ -1,4 +1,4 @@
-﻿# AppXRay 1-Click Installer for Windows
+# AppXRay 1-Click Installer for Windows
 # Usage in PowerShell:
 #   irm https://raw.githubusercontent.com/gprs1022/appxray/main/install.ps1 | iex
 
