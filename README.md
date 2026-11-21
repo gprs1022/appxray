@@ -30,28 +30,39 @@
 
 ---
 
-## 🚀 Quick Start: Installation
+## 🚀 1-Step Instant Installation
 
-### Option 1: Global Antigravity Plugin (Recommended)
+Run the single command below for your operating system:
 
-To make AppXRay and its slash commands available across all your Antigravity workspaces:
+### 🪟 Windows (PowerShell)
+```powershell
+irm https://raw.githubusercontent.com/gprs1022/appxray/main/install.ps1 | iex
+```
 
-1. Clone or copy the repository into your global plugins folder:
-   ```bash
-   # Windows (PowerShell)
-   git clone https://github.com/gprs1022/appxray.git "$HOME\.gemini\config\plugins\appxray"
-   ```
-   ```bash
-   # macOS / Linux (Bash)
-   git clone https://github.com/gprs1022/appxray.git ~/.gemini/config/plugins/appxray
-   ```
-2. In Antigravity, the plugin will load automatically on your next turn. You can view and manage it anytime in your **Customizations** settings.
-
-### Option 2: Project Workspace Plugin
-
-To bundle AppXRay inside a specific workspace/repository:
+### 🍎 macOS & 🐧 Linux (Bash)
 ```bash
-git clone https://github.com/gprs1022/appxray.git .agents/plugins/appxray
+curl -fsSL https://raw.githubusercontent.com/gprs1022/appxray/main/install.sh | bash
+```
+
+*That's it!* The installer clones AppXRay directly into your Antigravity global plugins directory (`~/.gemini/config/plugins/appxray`), configures permissions, and immediately activates all slash commands (`/appxray`, `/appxray-discover`, `/appxray-compare`, `/appxray-blueprint`) inside Antigravity without needing a restart.
+
+---
+
+## 💻 Alternative Manual Installation
+
+### Global Antigravity Plugin (Manual Clone)
+```bash
+# Windows (PowerShell)
+git clone https://github.com/gprs1022/appxray.git "$HOME\.gemini\config\plugins\appxray"
+
+# macOS / Linux (Bash)
+git clone https://github.com/gprs1022/appxray.git ~/.gemini/config/plugins/appxray
+```
+
+### Project-Scoped Plugin (Single Workspace Only)
+To install AppXRay only in your current repository:
+```bash
+git clone https://github.com/gprs1022/appxray.git .agents/skills/appxray
 ```
 
 ---
