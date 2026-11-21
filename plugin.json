@@ -3,7 +3,7 @@
   "displayName": "AppXRay",
   "version": "0.1.0",
   "description": "Evidence-first reverse engineering & app intelligence plugin for Android, iOS, and Web. Inspect workflows, extract business logic, compare apps, and generate practical product blueprints.",
-  "logo": "assets/logo.svg",
+  "logo": "assets/logo.png",
   "author": {
     "name": "gprs1022",
     "url": "https://github.com/gprs1022"

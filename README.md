@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.svg" alt="AppXRay Logo" width="140" height="140">
+  <img src="assets/logo.png" alt="AppXRay Logo" width="160" height="160">
 </p>
 
 <h1 align="center">AppXRay</h1>
